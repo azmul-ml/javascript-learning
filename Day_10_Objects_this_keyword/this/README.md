@@ -18,13 +18,17 @@ In JavaScript, the ```this``` keyword points to an object. The object become dif
 ```3. call() or apply() method```
 ```4. bind() method```
 
+**See** ```1_general.js``` file for details
+
 #### Global Scope
 1. If a function is called from the global scope then inside the function the ```this``` will point to the window object.
 2. ```this``` points to global window object even if it is used in an inner function.
 
+**See** ```2.1.global_scope.js``` & ```2.2.global_scope.js``` files for details
 #### Object's Method
 We can create an object of a function using ```new``` keyword. So, when we create an object of a function using ```new``` keyword then ```this``` will point to that particular object
 
+**See** ```3.1_object_method.js``` & ```3.2_object_method.js``` files for details
 #### Call & Apply Methods
 In JavaScript, a function can be invoked using ```()``` operator as well as ```call()``` and ```apply()```method as shown below.
 
@@ -39,9 +43,12 @@ WhoIsThis.apply();
 ```
 The ```call()``` and ```apply()``` methods are predefined JavaScript methods. They can both be used to call an object method with another object as argument.
 
+**See** ```4_call_apply.js``` file for details
+
 #### Bind Method
 With the ```bind()``` method, an object can borrow a method from another object.
 
+**See** ```5_bind.js``` file for details
 ### About Precedence
 So these 4 rules applies to ```this``` keyword in order to we can determine which object ```this``` points to. The following is precedence of order.
 
