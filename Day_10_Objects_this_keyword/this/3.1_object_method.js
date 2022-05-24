@@ -1,20 +1,42 @@
-function WhoIsThis() {
-  this.price = 10;
-}
-var obj1 = new WhoIsThis();
-
-var obj2 = new WhoIsThis();
-obj2.price = 20;
-
-console.log(obj1.price); // output: 10
-console.log(obj2.price); // output: 20
-
 /*
-In the above example, this points to obj1 for obj1 instance
-and points to obj2 for obj2 instance. we know in JavaScript,
-properties can be attached to an object dynamically 
-using dot notation. Thus, price will be a property of 
-both the instances and each will have a separate copy of price.
+class WhoIsThis {
+    constructor(value) {
+        this.price = value;
+
+        this.display = function () {
+            let price = 300;
+
+            console.log("price = " + price);
+            console.log("this.price = " + this.price);
+        };
+    }
+}
 */
 
+var price = 100;
 
+function WhoIsThis(value) {
+    this.price = value;
+    
+    this.display = function(){
+        let price = 300;
+        
+        console.log("price = " + price);
+        console.log("this.price = " + this.price);
+    };
+}
+
+var obj1 = new WhoIsThis(200);
+obj1.display(); 
+
+var obj2 = new WhoIsThis(300);
+obj2.display(); 
+
+/* 
+In the above example, this points to obj1 for obj1 instance
+and points to obj2 for obj2 instance.
+Here obj1 and obj2 both point will have two properties
+price and display, where display is a function expression. 
+So, this inside display() method points to obj when 
+calling obj.display(). 
+ */

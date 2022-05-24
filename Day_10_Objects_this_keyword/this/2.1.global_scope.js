@@ -1,7 +1,7 @@
 
 var price = 10;
 function whoIsThis() {
-    var price = 20;
+    let price = 20;
 
     console.log("output: price = " + price); // output: 20
     console.log("output: this.price = " + this.price); // output: 10

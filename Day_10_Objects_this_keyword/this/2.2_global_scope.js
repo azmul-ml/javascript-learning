@@ -1,4 +1,5 @@
 var price = 10;
+
 function someFunction() {
 
     function whoIsThis() {

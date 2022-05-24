@@ -1,3 +1,13 @@
+//In an object method, this points to the object.
+let person = {
+  name: "Azmul Hossain",
+  sayHi() {
+    console.log(this) // output: object
+    console.log("Hi ", this.name) // output: "Hi Azmul Hossain"
+  }
+};
+person.sayHi() 
+
 // Alone, this points to the global object
 console.log(this); // output: global object
 
@@ -14,32 +24,11 @@ function whoIsThis() {
 }
 whoIsThis();
 
-//In an object method, this points to the object.
-const person = {
-  firstName: "Azmul",
-  lastName : "Hossain",
-  fullName : function() {
-    console.log(this) // output: object
-    return this.firstName + " " + this.lastName;
-  }
-};
-person.fullName() // output: "Azmul Hossain"
-
-// In the arrow method
-const personA = {
-  firstName: "Azmul",
-  lastName : "Hossain",
-  fullName : () => {
-    console.log(this) // output: global object
-    return this.firstName + " " + this.lastName;
-  }
-};
-personA.fullName() // undefined undefined
-
 // In an event, this points to the element that received the event.
-{/* <button onclick="this.style.display='none'">
+<button onclick="this.style.display='none'">
   Click to Remove Me!
-</button> */}
+</button> 
+
 
 
 

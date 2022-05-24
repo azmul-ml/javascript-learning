@@ -1,28 +1,28 @@
-const person = {
-  firstName: "Hello",
-  lastName : "World",
-  fullName : function() {
-    return this.firstName + " " + this.lastName;
+let person = {
+  id : 101,
+  name: "Hello World",
+  displayInfo : function() {
+    return this.id + " " + this.name;
   }
 }
 
-const person1 = {
-  firstName:"Azmul",
-  lastName: "Hossain",
+let person1 = {
+  id: 102,
+  name:"Azmul Hossain",
 }
 
-const person2 = {
-  firstName:"Mamunur",
-  lastName: "Rasid",
+let person2 = {
+  id: 100,
+  name: "Mamunur Rasid",
 }
 
-// Return "Azmul Hossain":
-let fullName = person.fullName.call(person1)
-console.log(fullName);
-// Return "Azmul Hossain":
-console.log(person.fullName.apply(person1));
+// Return "102 Azmul Hossain":
+let info = person.displayInfo.call(person1)
+console.log(info);
+// Return "100 Mamunur Rasid":
+console.log(person.displayInfo.call(person2));
 
-// Return "Mamunur Rasid":
-console.log(person.fullName.call(person2));
-// Return "Mamunur Rasid":
-console.log(person.fullName.apply(person2));
+// Return "102 Azmul Hossain":
+console.log(person.displayInfo.apply(person1));
+// Return "100 Mamunur Rasid":
+console.log(person.displayInfo.apply(person2));

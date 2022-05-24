@@ -5,10 +5,10 @@ The ``this`` keyword is one of the most widely used and yet confusing keyword in
 In JavaScript, the ```this``` keyword points to an object. The object become diffrent depends on how a function is called or invoked.
 
 **In general** ```this``` follows the below rules
-```1. Alone, this points to the global object that means window object.```
-```2. In a function, this points to the global object.```
-```3. In a function, in strict mode, this is undefined.```
-```4. In an object method, this points to the object.```
+```1. In an object method, this points to the object.```
+```2. Alone, this points to the global object that means window object.```
+```3. In a function, this points to the global object.```
+```4. In a function, in strict mode, this is undefined.```
 ```5. In an event, this points to the element that received the event.```
 
 **In details**, The following four rules applies to ```this``` in order to know which object is pointed by ```this``` keyword.

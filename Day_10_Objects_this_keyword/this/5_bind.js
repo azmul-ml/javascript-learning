@@ -1,28 +1,28 @@
-const person = {
-  firstName:"Hello",
-  lastName: "World",
-  fullName: function () {
-    return this.firstName + " " + this.lastName;
+let person = {
+  id : 101,
+  name: "Hello World",
+  displayInfo : function() {
+    return this.id + " " + this.name;
   }
 }
 
-const person1 = {
-  firstName:"Azmul",
-  lastName: "Hossain",
+let person1 = {
+  id: 102,
+  name:"Azmul Hossain",
 }
 
-const person2 = {
-  firstName:"Mamunur",
-  lastName: "Rasid",
+let person2 = {
+  id: 100,
+  name: "Mamunur Rasid",
 }
 
-let fullName1 = person.fullName.bind(person1);
-console.log(fullName1()); // output: Azmul Hossain
+let info = person.displayInfo.bind(person1);
+console.log(info()); // output: 102 Azmul Hossain
 
-let fullName2 = person.fullName.bind(person2);
-console.log(fullName2()); // output: Mamunur Rasid
+let info2 = person.displayInfo.bind(person2);
+console.log(info2()); // output: 100 Mamunur Rasid
 
 /*
 The person1 and person2 objects borrow the 
-fullName method from the person object.
+displayInfo method from the person object.
 */
