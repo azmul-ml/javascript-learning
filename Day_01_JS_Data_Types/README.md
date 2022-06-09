@@ -74,7 +74,7 @@ First of all `hoisting` is not a real thing that js engine does. Js engine doesn
 
 Above code give us a `syntax error`. So how does it know about the error through line 5 without executing in 1st line. So before execution it's being parsed or compiled by js engine.
 
-We'll cover that later in detail on our allocated **Javascript Engine Session**. But in our session we'll use the word hoisting to make us easy to understand.
+We'll cover that later in detail on our allocated **Javascript Engine Session**. But in our session we'll use the word hoisting to make it easy to understand.
 
 ```js
 name;
@@ -150,7 +150,7 @@ func();
 
 **let doesn't hoist ??**
 
-`let` doesn't mean in a good way but it's inaccurate. `let` and `const` still hoist but these hoist differently
+`let` doesn't hoist meant in a good way but it's inaccurate. `let` and `const` still hoist but these hoist differently
 
 1. `let` and `const` hoist on block scope
 2. Using `var` when it creates a variable during compile time of a scope it says scope here is variable named `anyThingYouDeclared` and also initialize it to `undefined`
