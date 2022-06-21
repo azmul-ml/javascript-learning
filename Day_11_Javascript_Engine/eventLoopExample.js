@@ -7,3 +7,6 @@ function fun () {
 
 console.log("execution started");
 setTimeout(fun, 5000);
+
+//for graphical view
+//http://latentflip.com/loupe
