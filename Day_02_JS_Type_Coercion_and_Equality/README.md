@@ -37,6 +37,7 @@ Both primitive and object can only be converted into these three types though th
 ```jsx
 String(-0) // "0"
 ```
+Except this one other primitive conversions are usual. Mentioned one is a bit quirky.
 
 **Object Conversion**
 
@@ -116,7 +117,7 @@ Boolean(undefined)    // false
 Boolean(false)        // false
 ```
 
-### [Symbol Conversion](https://leanpub.com/understandinges6/read/#leanpub-auto-symbol-coercion)
+### [Symbol Conversion](https://leanpub.com/understandinges6/read/#leanpub-auto-symbol-coercion) (Skip this one to make the session simple as it's not being used often)
 
 ### 🧐 Coercion Corner Cases In One Place:
 
