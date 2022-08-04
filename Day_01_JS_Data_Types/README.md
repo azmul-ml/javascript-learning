@@ -330,7 +330,7 @@ The exponentiation operator is right-associative: `a ** b ** c` is equal to `a *
 
 Operator precedence in JavaScript is divided into 19 different levels. Check out from [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence#table) to know more about them.
 
-#String and Template Literals
+# String and Template Literals
 
 ```javascript
 "apple" === "apple";
@@ -361,13 +361,13 @@ var message = "Javascript's beauty is simplicity";
 var message = "Javascript's beauty is simplicity";
 ```
 
-###Points to remember
+### Points to remember
 
 - A double-quoted string can have single quotes without escaping them, conversely, a single-quoted string can have double quotes within it without having to escape them.
 - Double quotes ( \" ) must escape a double quote and vice versa single quotes ( \' ) must escape a single quote.
 - In JSON only quoting style allowed is double-quote. Single quote is not allowed in JSON
 
-##Template literals (Template strings)
+## Template literals (Template strings)
 
 Tagged templates are set with backtick(`) character and allowing us to use multiline strings, string interpolation and tagged templates.
 
@@ -376,7 +376,7 @@ var name = "Rifat";
 var msg = `Javascript's beauty is simplicity``Hello, ${name}`;
 ```
 
-###Tagged Template
+### Tagged Template
 
 ```js
 let mark = (strings, ...values) => {
@@ -391,7 +391,7 @@ let intro = mark`Hello, My name is ${NAME}. Currently working as a ${title}.`;
 console.log(intro); // ??
 ```
 
-#Strict Mode
+# Strict Mode
 
 Strict mode enables certain JS codes to run in a different way to make it more restricted.
 
