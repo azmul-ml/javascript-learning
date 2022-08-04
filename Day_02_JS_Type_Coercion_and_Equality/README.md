@@ -63,10 +63,7 @@ Let’s simplify how ToPrimitive works
 [undefined, null, true, 1, "5", new Date(), {a: 2}, [1,2,3]]
 ```
 
-<aside>
 👉🏿 If we call `toString()` or `valueOf()` by using `{}.` we run into an error `Uncaught SyntaxError: Unexpected token '.'` . It’s because JS interprets it as a valid block instead of object literal. Hence, we can’t use those methods by using `.` at the end of block. `({}).toString() | ({}).valueOf()` that will work.
-
-</aside>
 
 ### Number Conversion:
 
