@@ -1,0 +1,131 @@
+<html>
+<p>Arun</p>
+<script>
+
+    // phase example //
+    //
+    var count = 3;
+
+    function sum(x, y) {
+        return x + y
+    }
+
+    var result = sum(5, 8);
+    console.log(result)
+
+    // global context code example //
+
+    var a = 3;
+    var b = 4;
+    var c = a + b;
+
+    function sum(x, y) {
+        var z = 3;
+        return x + y;
+    }
+
+    sum(3, 4);
+    console.log('done');
+
+    // function execution context //
+
+    function add3(x, y) {
+        var z = 3
+        return x + y + z
+    }
+
+    var result = add3(3, 4);
+    console.log(result);
+
+    // example //
+
+    var count = 0;
+
+    function sum(x, y) {
+        var z = 3
+        return x + y
+    }
+
+    var result = sum(5, 8);
+    console.log(result)
+
+
+    // callstack //
+    //
+    var a = 1;
+
+    function one() {
+        var varOfOne = 1;
+        console.log('one called');
+
+        function two() {
+            var varOfTwo = 2;
+            console.log('two called');
+
+            function three(d) {
+                var varOfThree = 3;
+                console.log(d);
+                console.log('three done');
+            }
+
+            three(4);
+            console.log('two done');
+        }
+
+        two();
+        console.log('one done');
+        return 100;
+    }
+
+    var x = one();
+    console.log(x);
+
+
+    // closure //
+
+    var total = 0;
+
+    function sum(a) {
+        var x = 3;
+        return function (b) {
+            return a + b;
+        };
+    }
+
+    var temp = sum(2);
+    total = total + temp(8);
+    console.log(total)
+
+    // test1
+
+    function msg() {
+        var text = "hello";
+    }
+
+    msg();
+    console.log(text);
+
+    // test 2
+
+    var text = ''
+
+    function msg() {
+        text = "hello";
+    }
+
+    msg();
+    console.log(text);
+
+    // test 3
+
+    var text = ''
+
+    function msg() {
+        text = "hello";
+    }
+
+    console.log(text);
+    msg();
+
+</script>
+</html>
